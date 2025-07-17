@@ -7,13 +7,15 @@
 
     <title>Chống thất nghiệp</title>
 
-    <meta name="description" content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
+    <meta name="description"
+        content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
     <meta name="keywords" content="Việc làm, thất nghiệp, Freelancer, AI" />
     <meta name="author" content="idai.vn" />
 
     <!-- Open Graph (Facebook, Zalo) -->
     <meta property="og:title" content="Chống thất nghiệp" />
-    <meta property="og:description" content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
+    <meta property="og:description"
+        content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
     <meta property="og:image" content="https://apigw.idai.vn/files/preview/idai-main-thumbnail" />
     <meta property="og:url" content="http://ai7.vn" />
     <meta property="og:type" content="website" />
@@ -22,7 +24,8 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="https://apigw.idai.vn/files/preview/idai-main-thumbnails" />
     <meta name="twitter:title" content="Chống thất nghiệp" />
-    <meta name="twitter:description" content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
+    <meta name="twitter:description"
+        content="Tìm việc nhanh – Kết nối dễ – Ứng dụng AI thông minh cùng IDAI, nền tảng hỗ trợ Freelancer và nhà tuyển dụng hiệu quả." />
     <meta name="twitter:image" content="https://apigw.idai.vn/files/preview/idai-main-thumbnail" />
 
 
@@ -46,1676 +49,797 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     <!-- Styles / Scripts -->
-    @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @else
-        <style>
-            /*! tailwindcss v4.0.7 | MIT License | https://tailwindcss.com */
-            @layer theme {
-
-                :root,
-                :host {
-                    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-                    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-                    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-                    --color-red-50: oklch(.971 .013 17.38);
-                    --color-red-100: oklch(.936 .032 17.717);
-                    --color-red-200: oklch(.885 .062 18.334);
-                    --color-red-300: oklch(.808 .114 19.571);
-                    --color-red-400: oklch(.704 .191 22.216);
-                    --color-red-500: oklch(.637 .237 25.331);
-                    --color-red-600: oklch(.577 .245 27.325);
-                    --color-red-700: oklch(.505 .213 27.518);
-                    --color-red-800: oklch(.444 .177 26.899);
-                    --color-red-900: oklch(.396 .141 25.723);
-                    --color-red-950: oklch(.258 .092 26.042);
-                    --color-orange-50: oklch(.98 .016 73.684);
-                    --color-orange-100: oklch(.954 .038 75.164);
-                    --color-orange-200: oklch(.901 .076 70.697);
-                    --color-orange-300: oklch(.837 .128 66.29);
-                    --color-orange-400: oklch(.75 .183 55.934);
-                    --color-orange-500: oklch(.705 .213 47.604);
-                    --color-orange-600: oklch(.646 .222 41.116);
-                    --color-orange-700: oklch(.553 .195 38.402);
-                    --color-orange-800: oklch(.47 .157 37.304);
-                    --color-orange-900: oklch(.408 .123 38.172);
-                    --color-orange-950: oklch(.266 .079 36.259);
-                    --color-amber-50: oklch(.987 .022 95.277);
-                    --color-amber-100: oklch(.962 .059 95.617);
-                    --color-amber-200: oklch(.924 .12 95.746);
-                    --color-amber-300: oklch(.879 .169 91.605);
-                    --color-amber-400: oklch(.828 .189 84.429);
-                    --color-amber-500: oklch(.769 .188 70.08);
-                    --color-amber-600: oklch(.666 .179 58.318);
-                    --color-amber-700: oklch(.555 .163 48.998);
-                    --color-amber-800: oklch(.473 .137 46.201);
-                    --color-amber-900: oklch(.414 .112 45.904);
-                    --color-amber-950: oklch(.279 .077 45.635);
-                    --color-yellow-50: oklch(.987 .026 102.212);
-                    --color-yellow-100: oklch(.973 .071 103.193);
-                    --color-yellow-200: oklch(.945 .129 101.54);
-                    --color-yellow-300: oklch(.905 .182 98.111);
-                    --color-yellow-400: oklch(.852 .199 91.936);
-                    --color-yellow-500: oklch(.795 .184 86.047);
-                    --color-yellow-600: oklch(.681 .162 75.834);
-                    --color-yellow-700: oklch(.554 .135 66.442);
-                    --color-yellow-800: oklch(.476 .114 61.907);
-                    --color-yellow-900: oklch(.421 .095 57.708);
-                    --color-yellow-950: oklch(.286 .066 53.813);
-                    --color-lime-50: oklch(.986 .031 120.757);
-                    --color-lime-100: oklch(.967 .067 122.328);
-                    --color-lime-200: oklch(.938 .127 124.321);
-                    --color-lime-300: oklch(.897 .196 126.665);
-                    --color-lime-400: oklch(.841 .238 128.85);
-                    --color-lime-500: oklch(.768 .233 130.85);
-                    --color-lime-600: oklch(.648 .2 131.684);
-                    --color-lime-700: oklch(.532 .157 131.589);
-                    --color-lime-800: oklch(.453 .124 130.933);
-                    --color-lime-900: oklch(.405 .101 131.063);
-                    --color-lime-950: oklch(.274 .072 132.109);
-                    --color-green-50: oklch(.982 .018 155.826);
-                    --color-green-100: oklch(.962 .044 156.743);
-                    --color-green-200: oklch(.925 .084 155.995);
-                    --color-green-300: oklch(.871 .15 154.449);
-                    --color-green-400: oklch(.792 .209 151.711);
-                    --color-green-500: oklch(.723 .219 149.579);
-                    --color-green-600: oklch(.627 .194 149.214);
-                    --color-green-700: oklch(.527 .154 150.069);
-                    --color-green-800: oklch(.448 .119 151.328);
-                    --color-green-900: oklch(.393 .095 152.535);
-                    --color-green-950: oklch(.266 .065 152.934);
-                    --color-emerald-50: oklch(.979 .021 166.113);
-                    --color-emerald-100: oklch(.95 .052 163.051);
-                    --color-emerald-200: oklch(.905 .093 164.15);
-                    --color-emerald-300: oklch(.845 .143 164.978);
-                    --color-emerald-400: oklch(.765 .177 163.223);
-                    --color-emerald-500: oklch(.696 .17 162.48);
-                    --color-emerald-600: oklch(.596 .145 163.225);
-                    --color-emerald-700: oklch(.508 .118 165.612);
-                    --color-emerald-800: oklch(.432 .095 166.913);
-                    --color-emerald-900: oklch(.378 .077 168.94);
-                    --color-emerald-950: oklch(.262 .051 172.552);
-                    --color-teal-50: oklch(.984 .014 180.72);
-                    --color-teal-100: oklch(.953 .051 180.801);
-                    --color-teal-200: oklch(.91 .096 180.426);
-                    --color-teal-300: oklch(.855 .138 181.071);
-                    --color-teal-400: oklch(.777 .152 181.912);
-                    --color-teal-500: oklch(.704 .14 182.503);
-                    --color-teal-600: oklch(.6 .118 184.704);
-                    --color-teal-700: oklch(.511 .096 186.391);
-                    --color-teal-800: oklch(.437 .078 188.216);
-                    --color-teal-900: oklch(.386 .063 188.416);
-                    --color-teal-950: oklch(.277 .046 192.524);
-                    --color-cyan-50: oklch(.984 .019 200.873);
-                    --color-cyan-100: oklch(.956 .045 203.388);
-                    --color-cyan-200: oklch(.917 .08 205.041);
-                    --color-cyan-300: oklch(.865 .127 207.078);
-                    --color-cyan-400: oklch(.789 .154 211.53);
-                    --color-cyan-500: oklch(.715 .143 215.221);
-                    --color-cyan-600: oklch(.609 .126 221.723);
-                    --color-cyan-700: oklch(.52 .105 223.128);
-                    --color-cyan-800: oklch(.45 .085 224.283);
-                    --color-cyan-900: oklch(.398 .07 227.392);
-                    --color-cyan-950: oklch(.302 .056 229.695);
-                    --color-sky-50: oklch(.977 .013 236.62);
-                    --color-sky-100: oklch(.951 .026 236.824);
-                    --color-sky-200: oklch(.901 .058 230.902);
-                    --color-sky-300: oklch(.828 .111 230.318);
-                    --color-sky-400: oklch(.746 .16 232.661);
-                    --color-sky-500: oklch(.685 .169 237.323);
-                    --color-sky-600: oklch(.588 .158 241.966);
-                    --color-sky-700: oklch(.5 .134 242.749);
-                    --color-sky-800: oklch(.443 .11 240.79);
-                    --color-sky-900: oklch(.391 .09 240.876);
-                    --color-sky-950: oklch(.293 .066 243.157);
-                    --color-blue-50: oklch(.97 .014 254.604);
-                    --color-blue-100: oklch(.932 .032 255.585);
-                    --color-blue-200: oklch(.882 .059 254.128);
-                    --color-blue-300: oklch(.809 .105 251.813);
-                    --color-blue-400: oklch(.707 .165 254.624);
-                    --color-blue-500: oklch(.623 .214 259.815);
-                    --color-blue-600: oklch(.546 .245 262.881);
-                    --color-blue-700: oklch(.488 .243 264.376);
-                    --color-blue-800: oklch(.424 .199 265.638);
-                    --color-blue-900: oklch(.379 .146 265.522);
-                    --color-blue-950: oklch(.282 .091 267.935);
-                    --color-indigo-50: oklch(.962 .018 272.314);
-                    --color-indigo-100: oklch(.93 .034 272.788);
-                    --color-indigo-200: oklch(.87 .065 274.039);
-                    --color-indigo-300: oklch(.785 .115 274.713);
-                    --color-indigo-400: oklch(.673 .182 276.935);
-                    --color-indigo-500: oklch(.585 .233 277.117);
-                    --color-indigo-600: oklch(.511 .262 276.966);
-                    --color-indigo-700: oklch(.457 .24 277.023);
-                    --color-indigo-800: oklch(.398 .195 277.366);
-                    --color-indigo-900: oklch(.359 .144 278.697);
-                    --color-indigo-950: oklch(.257 .09 281.288);
-                    --color-violet-50: oklch(.969 .016 293.756);
-                    --color-violet-100: oklch(.943 .029 294.588);
-                    --color-violet-200: oklch(.894 .057 293.283);
-                    --color-violet-300: oklch(.811 .111 293.571);
-                    --color-violet-400: oklch(.702 .183 293.541);
-                    --color-violet-500: oklch(.606 .25 292.717);
-                    --color-violet-600: oklch(.541 .281 293.009);
-                    --color-violet-700: oklch(.491 .27 292.581);
-                    --color-violet-800: oklch(.432 .232 292.759);
-                    --color-violet-900: oklch(.38 .189 293.745);
-                    --color-violet-950: oklch(.283 .141 291.089);
-                    --color-purple-50: oklch(.977 .014 308.299);
-                    --color-purple-100: oklch(.946 .033 307.174);
-                    --color-purple-200: oklch(.902 .063 306.703);
-                    --color-purple-300: oklch(.827 .119 306.383);
-                    --color-purple-400: oklch(.714 .203 305.504);
-                    --color-purple-500: oklch(.627 .265 303.9);
-                    --color-purple-600: oklch(.558 .288 302.321);
-                    --color-purple-700: oklch(.496 .265 301.924);
-                    --color-purple-800: oklch(.438 .218 303.724);
-                    --color-purple-900: oklch(.381 .176 304.987);
-                    --color-purple-950: oklch(.291 .149 302.717);
-                    --color-fuchsia-50: oklch(.977 .017 320.058);
-                    --color-fuchsia-100: oklch(.952 .037 318.852);
-                    --color-fuchsia-200: oklch(.903 .076 319.62);
-                    --color-fuchsia-300: oklch(.833 .145 321.434);
-                    --color-fuchsia-400: oklch(.74 .238 322.16);
-                    --color-fuchsia-500: oklch(.667 .295 322.15);
-                    --color-fuchsia-600: oklch(.591 .293 322.896);
-                    --color-fuchsia-700: oklch(.518 .253 323.949);
-                    --color-fuchsia-800: oklch(.452 .211 324.591);
-                    --color-fuchsia-900: oklch(.401 .17 325.612);
-                    --color-fuchsia-950: oklch(.293 .136 325.661);
-                    --color-pink-50: oklch(.971 .014 343.198);
-                    --color-pink-100: oklch(.948 .028 342.258);
-                    --color-pink-200: oklch(.899 .061 343.231);
-                    --color-pink-300: oklch(.823 .12 346.018);
-                    --color-pink-400: oklch(.718 .202 349.761);
-                    --color-pink-500: oklch(.656 .241 354.308);
-                    --color-pink-600: oklch(.592 .249 .584);
-                    --color-pink-700: oklch(.525 .223 3.958);
-                    --color-pink-800: oklch(.459 .187 3.815);
-                    --color-pink-900: oklch(.408 .153 2.432);
-                    --color-pink-950: oklch(.284 .109 3.907);
-                    --color-rose-50: oklch(.969 .015 12.422);
-                    --color-rose-100: oklch(.941 .03 12.58);
-                    --color-rose-200: oklch(.892 .058 10.001);
-                    --color-rose-300: oklch(.81 .117 11.638);
-                    --color-rose-400: oklch(.712 .194 13.428);
-                    --color-rose-500: oklch(.645 .246 16.439);
-                    --color-rose-600: oklch(.586 .253 17.585);
-                    --color-rose-700: oklch(.514 .222 16.935);
-                    --color-rose-800: oklch(.455 .188 13.697);
-                    --color-rose-900: oklch(.41 .159 10.272);
-                    --color-rose-950: oklch(.271 .105 12.094);
-                    --color-slate-50: oklch(.984 .003 247.858);
-                    --color-slate-100: oklch(.968 .007 247.896);
-                    --color-slate-200: oklch(.929 .013 255.508);
-                    --color-slate-300: oklch(.869 .022 252.894);
-                    --color-slate-400: oklch(.704 .04 256.788);
-                    --color-slate-500: oklch(.554 .046 257.417);
-                    --color-slate-600: oklch(.446 .043 257.281);
-                    --color-slate-700: oklch(.372 .044 257.287);
-                    --color-slate-800: oklch(.279 .041 260.031);
-                    --color-slate-900: oklch(.208 .042 265.755);
-                    --color-slate-950: oklch(.129 .042 264.695);
-                    --color-gray-50: oklch(.985 .002 247.839);
-                    --color-gray-100: oklch(.967 .003 264.542);
-                    --color-gray-200: oklch(.928 .006 264.531);
-                    --color-gray-300: oklch(.872 .01 258.338);
-                    --color-gray-400: oklch(.707 .022 261.325);
-                    --color-gray-500: oklch(.551 .027 264.364);
-                    --color-gray-600: oklch(.446 .03 256.802);
-                    --color-gray-700: oklch(.373 .034 259.733);
-                    --color-gray-800: oklch(.278 .033 256.848);
-                    --color-gray-900: oklch(.21 .034 264.665);
-                    --color-gray-950: oklch(.13 .028 261.692);
-                    --color-zinc-50: oklch(.985 0 0);
-                    --color-zinc-100: oklch(.967 .001 286.375);
-                    --color-zinc-200: oklch(.92 .004 286.32);
-                    --color-zinc-300: oklch(.871 .006 286.286);
-                    --color-zinc-400: oklch(.705 .015 286.067);
-                    --color-zinc-500: oklch(.552 .016 285.938);
-                    --color-zinc-600: oklch(.442 .017 285.786);
-                    --color-zinc-700: oklch(.37 .013 285.805);
-                    --color-zinc-800: oklch(.274 .006 286.033);
-                    --color-zinc-900: oklch(.21 .006 285.885);
-                    --color-zinc-950: oklch(.141 .005 285.823);
-                    --color-neutral-50: oklch(.985 0 0);
-                    --color-neutral-100: oklch(.97 0 0);
-                    --color-neutral-200: oklch(.922 0 0);
-                    --color-neutral-300: oklch(.87 0 0);
-                    --color-neutral-400: oklch(.708 0 0);
-                    --color-neutral-500: oklch(.556 0 0);
-                    --color-neutral-600: oklch(.439 0 0);
-                    --color-neutral-700: oklch(.371 0 0);
-                    --color-neutral-800: oklch(.269 0 0);
-                    --color-neutral-900: oklch(.205 0 0);
-                    --color-neutral-950: oklch(.145 0 0);
-                    --color-stone-50: oklch(.985 .001 106.423);
-                    --color-stone-100: oklch(.97 .001 106.424);
-                    --color-stone-200: oklch(.923 .003 48.717);
-                    --color-stone-300: oklch(.869 .005 56.366);
-                    --color-stone-400: oklch(.709 .01 56.259);
-                    --color-stone-500: oklch(.553 .013 58.071);
-                    --color-stone-600: oklch(.444 .011 73.639);
-                    --color-stone-700: oklch(.374 .01 67.558);
-                    --color-stone-800: oklch(.268 .007 34.298);
-                    --color-stone-900: oklch(.216 .006 56.043);
-                    --color-stone-950: oklch(.147 .004 49.25);
-                    --color-black: #000;
-                    --color-white: #fff;
-                    --spacing: .25rem;
-                    --breakpoint-sm: 40rem;
-                    --breakpoint-md: 48rem;
-                    --breakpoint-lg: 64rem;
-                    --breakpoint-xl: 80rem;
-                    --breakpoint-2xl: 96rem;
-                    --container-3xs: 16rem;
-                    --container-2xs: 18rem;
-                    --container-xs: 20rem;
-                    --container-sm: 24rem;
-                    --container-md: 28rem;
-                    --container-lg: 32rem;
-                    --container-xl: 36rem;
-                    --container-2xl: 42rem;
-                    --container-3xl: 48rem;
-                    --container-4xl: 56rem;
-                    --container-5xl: 64rem;
-                    --container-6xl: 72rem;
-                    --container-7xl: 80rem;
-                    --text-xs: .75rem;
-                    --text-xs--line-height: calc(1/.75);
-                    --text-sm: .875rem;
-                    --text-sm--line-height: calc(1.25/.875);
-                    --text-base: 1rem;
-                    --text-base--line-height: 1.5;
-                    --text-lg: 1.125rem;
-                    --text-lg--line-height: calc(1.75/1.125);
-                    --text-xl: 1.25rem;
-                    --text-xl--line-height: calc(1.75/1.25);
-                    --text-2xl: 1.5rem;
-                    --text-2xl--line-height: calc(2/1.5);
-                    --text-3xl: 1.875rem;
-                    --text-3xl--line-height: 1.2;
-                    --text-4xl: 2.25rem;
-                    --text-4xl--line-height: calc(2.5/2.25);
-                    --text-5xl: 3rem;
-                    --text-5xl--line-height: 1;
-                    --text-6xl: 3.75rem;
-                    --text-6xl--line-height: 1;
-                    --text-7xl: 4.5rem;
-                    --text-7xl--line-height: 1;
-                    --text-8xl: 6rem;
-                    --text-8xl--line-height: 1;
-                    --text-9xl: 8rem;
-                    --text-9xl--line-height: 1;
-                    --font-weight-thin: 100;
-                    --font-weight-extralight: 200;
-                    --font-weight-light: 300;
-                    --font-weight-normal: 400;
-                    --font-weight-medium: 500;
-                    --font-weight-semibold: 600;
-                    --font-weight-bold: 700;
-                    --font-weight-extrabold: 800;
-                    --font-weight-black: 900;
-                    --tracking-tighter: -.05em;
-                    --tracking-tight: -.025em;
-                    --tracking-normal: 0em;
-                    --tracking-wide: .025em;
-                    --tracking-wider: .05em;
-                    --tracking-widest: .1em;
-                    --leading-tight: 1.25;
-                    --leading-snug: 1.375;
-                    --leading-normal: 1.5;
-                    --leading-relaxed: 1.625;
-                    --leading-loose: 2;
-                    --radius-xs: .125rem;
-                    --radius-sm: .25rem;
-                    --radius-md: .375rem;
-                    --radius-lg: .5rem;
-                    --radius-xl: .75rem;
-                    --radius-2xl: 1rem;
-                    --radius-3xl: 1.5rem;
-                    --radius-4xl: 2rem;
-                    --shadow-2xs: 0 1px #0000000d;
-                    --shadow-xs: 0 1px 2px 0 #0000000d;
-                    --shadow-sm: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
-                    --shadow-md: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
-                    --shadow-lg: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
-                    --shadow-xl: 0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;
-                    --shadow-2xl: 0 25px 50px -12px #00000040;
-                    --inset-shadow-2xs: inset 0 1px #0000000d;
-                    --inset-shadow-xs: inset 0 1px 1px #0000000d;
-                    --inset-shadow-sm: inset 0 2px 4px #0000000d;
-                    --drop-shadow-xs: 0 1px 1px #0000000d;
-                    --drop-shadow-sm: 0 1px 2px #00000026;
-                    --drop-shadow-md: 0 3px 3px #0000001f;
-                    --drop-shadow-lg: 0 4px 4px #00000026;
-                    --drop-shadow-xl: 0 9px 7px #0000001a;
-                    --drop-shadow-2xl: 0 25px 25px #00000026;
-                    --ease-in: cubic-bezier(.4, 0, 1, 1);
-                    --ease-out: cubic-bezier(0, 0, .2, 1);
-                    --ease-in-out: cubic-bezier(.4, 0, .2, 1);
-                    --animate-spin: spin 1s linear infinite;
-                    --animate-ping: ping 1s cubic-bezier(0, 0, .2, 1)infinite;
-                    --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1)infinite;
-                    --animate-bounce: bounce 1s infinite;
-                    --blur-xs: 4px;
-                    --blur-sm: 8px;
-                    --blur-md: 12px;
-                    --blur-lg: 16px;
-                    --blur-xl: 24px;
-                    --blur-2xl: 40px;
-                    --blur-3xl: 64px;
-                    --perspective-dramatic: 100px;
-                    --perspective-near: 300px;
-                    --perspective-normal: 500px;
-                    --perspective-midrange: 800px;
-                    --perspective-distant: 1200px;
-                    --aspect-video: 16/9;
-                    --default-transition-duration: .15s;
-                    --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-                    --default-font-family: var(--font-sans);
-                    --default-font-feature-settings: var(--font-sans--font-feature-settings);
-                    --default-font-variation-settings: var(--font-sans--font-variation-settings);
-                    --default-mono-font-family: var(--font-mono);
-                    --default-mono-font-feature-settings: var(--font-mono--font-feature-settings);
-                    --default-mono-font-variation-settings: var(--font-mono--font-variation-settings)
-                }
-            }
-
-            @layer base {
-
-                *,
-                :after,
-                :before,
-                ::backdrop {
-                    box-sizing: border-box;
-                    border: 0 solid;
-                    margin: 0;
-                    padding: 0
-                }
-
-                ::file-selector-button {
-                    box-sizing: border-box;
-                    border: 0 solid;
-                    margin: 0;
-                    padding: 0
-                }
-
-                html,
-                :host {
-                    -webkit-text-size-adjust: 100%;
-                    -moz-tab-size: 4;
-                    tab-size: 4;
-                    line-height: 1.5;
-                    font-family: var(--default-font-family, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
-                    font-feature-settings: var(--default-font-feature-settings, normal);
-                    font-variation-settings: var(--default-font-variation-settings, normal);
-                    -webkit-tap-highlight-color: transparent
-                }
-
-                body {
-                    line-height: inherit
-                }
-
-                hr {
-                    height: 0;
-                    color: inherit;
-                    border-top-width: 1px
-                }
-
-                abbr:where([title]) {
-                    -webkit-text-decoration: underline dotted;
-                    text-decoration: underline dotted
-                }
-
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6 {
-                    font-size: inherit;
-                    font-weight: inherit
-                }
-
-                a {
-                    color: inherit;
-                    -webkit-text-decoration: inherit;
-                    text-decoration: inherit
-                }
-
-                b,
-                strong {
-                    font-weight: bolder
-                }
-
-                code,
-                kbd,
-                samp,
-                pre {
-                    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
-                    font-feature-settings: var(--default-mono-font-feature-settings, normal);
-                    font-variation-settings: var(--default-mono-font-variation-settings, normal);
-                    font-size: 1em
-                }
-
-                small {
-                    font-size: 80%
-                }
-
-                sub,
-                sup {
-                    vertical-align: baseline;
-                    font-size: 75%;
-                    line-height: 0;
-                    position: relative
-                }
-
-                sub {
-                    bottom: -.25em
-                }
-
-                sup {
-                    top: -.5em
-                }
-
-                table {
-                    text-indent: 0;
-                    border-color: inherit;
-                    border-collapse: collapse
-                }
-
-                :-moz-focusring {
-                    outline: auto
-                }
-
-                progress {
-                    vertical-align: baseline
-                }
-
-                summary {
-                    display: list-item
-                }
-
-                ol,
-                ul,
-                menu {
-                    list-style: none
-                }
-
-                img,
-                svg,
-                video,
-                canvas,
-                audio,
-                iframe,
-                embed,
-                object {
-                    vertical-align: middle;
-                    display: block
-                }
-
-                img,
-                video {
-                    max-width: 100%;
-                    height: auto
-                }
-
-                button,
-                input,
-                select,
-                optgroup,
-                textarea {
-                    font: inherit;
-                    font-feature-settings: inherit;
-                    font-variation-settings: inherit;
-                    letter-spacing: inherit;
-                    color: inherit;
-                    opacity: 1;
-                    background-color: #0000;
-                    border-radius: 0
-                }
-
-                ::file-selector-button {
-                    font: inherit;
-                    font-feature-settings: inherit;
-                    font-variation-settings: inherit;
-                    letter-spacing: inherit;
-                    color: inherit;
-                    opacity: 1;
-                    background-color: #0000;
-                    border-radius: 0
-                }
-
-                :where(select:is([multiple], [size])) optgroup {
-                    font-weight: bolder
-                }
-
-                :where(select:is([multiple], [size])) optgroup option {
-                    padding-inline-start: 20px
-                }
-
-                ::file-selector-button {
-                    margin-inline-end: 4px
-                }
-
-                ::placeholder {
-                    opacity: 1;
-                    color: color-mix(in oklab, currentColor 50%, transparent)
-                }
-
-                textarea {
-                    resize: vertical
-                }
-
-                ::-webkit-search-decoration {
-                    -webkit-appearance: none
-                }
-
-                ::-webkit-date-and-time-value {
-                    min-height: 1lh;
-                    text-align: inherit
-                }
-
-                ::-webkit-datetime-edit {
-                    display: inline-flex
-                }
-
-                ::-webkit-datetime-edit-fields-wrapper {
-                    padding: 0
-                }
-
-                ::-webkit-datetime-edit {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-year-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-month-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-day-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-hour-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-minute-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-second-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-millisecond-field {
-                    padding-block: 0
-                }
-
-                ::-webkit-datetime-edit-meridiem-field {
-                    padding-block: 0
-                }
-
-                :-moz-ui-invalid {
-                    box-shadow: none
-                }
-
-                button,
-                input:where([type=button], [type=reset], [type=submit]) {
-                    -webkit-appearance: button;
-                    -moz-appearance: button;
-                    appearance: button
-                }
-
-                ::file-selector-button {
-                    -webkit-appearance: button;
-                    -moz-appearance: button;
-                    appearance: button
-                }
-
-                ::-webkit-inner-spin-button {
-                    height: auto
-                }
-
-                ::-webkit-outer-spin-button {
-                    height: auto
-                }
-
-                [hidden]:where(:not([hidden=until-found])) {
-                    display: none !important
-                }
-            }
-
-            @layer components;
-
-            @layer utilities {
-                .absolute {
-                    position: absolute
-                }
-
-                .relative {
-                    position: relative
-                }
-
-                .static {
-                    position: static
-                }
-
-                .inset-0 {
-                    inset: calc(var(--spacing)*0)
-                }
-
-                .-mt-\[4\.9rem\] {
-                    margin-top: -4.9rem
-                }
-
-                .-mb-px {
-                    margin-bottom: -1px
-                }
-
-                .mb-1 {
-                    margin-bottom: calc(var(--spacing)*1)
-                }
-
-                .mb-2 {
-                    margin-bottom: calc(var(--spacing)*2)
-                }
-
-                .mb-4 {
-                    margin-bottom: calc(var(--spacing)*4)
-                }
-
-                .mb-6 {
-                    margin-bottom: calc(var(--spacing)*6)
-                }
-
-                .-ml-8 {
-                    margin-left: calc(var(--spacing)*-8)
-                }
-
-                .flex {
-                    display: flex
-                }
-
-                .hidden {
-                    display: none
-                }
-
-                .inline-block {
-                    display: inline-block
-                }
-
-                .inline-flex {
-                    display: inline-flex
-                }
-
-                .table {
-                    display: table
-                }
-
-                .aspect-\[335\/376\] {
-                    aspect-ratio: 335/376
-                }
-
-                .h-1 {
-                    height: calc(var(--spacing)*1)
-                }
-
-                .h-1\.5 {
-                    height: calc(var(--spacing)*1.5)
-                }
-
-                .h-2 {
-                    height: calc(var(--spacing)*2)
-                }
-
-                .h-2\.5 {
-                    height: calc(var(--spacing)*2.5)
-                }
-
-                .h-3 {
-                    height: calc(var(--spacing)*3)
-                }
-
-                .h-3\.5 {
-                    height: calc(var(--spacing)*3.5)
-                }
-
-                .h-14 {
-                    height: calc(var(--spacing)*14)
-                }
-
-                .h-14\.5 {
-                    height: calc(var(--spacing)*14.5)
-                }
-
-                .min-h-screen {
-                    min-height: 100vh
-                }
-
-                .w-1 {
-                    width: calc(var(--spacing)*1)
-                }
-
-                .w-1\.5 {
-                    width: calc(var(--spacing)*1.5)
-                }
-
-                .w-2 {
-                    width: calc(var(--spacing)*2)
-                }
-
-                .w-2\.5 {
-                    width: calc(var(--spacing)*2.5)
-                }
-
-                .w-3 {
-                    width: calc(var(--spacing)*3)
-                }
-
-                .w-3\.5 {
-                    width: calc(var(--spacing)*3.5)
-                }
-
-                .w-\[448px\] {
-                    width: 448px
-                }
-
-                .w-full {
-                    width: 100%
-                }
-
-                .max-w-\[335px\] {
-                    max-width: 335px
-                }
-
-                .max-w-none {
-                    max-width: none
-                }
-
-                .flex-1 {
-                    flex: 1
-                }
-
-                .shrink-0 {
-                    flex-shrink: 0
-                }
-
-                .translate-y-0 {
-                    --tw-translate-y: calc(var(--spacing)*0);
-                    translate: var(--tw-translate-x)var(--tw-translate-y)
-                }
-
-                .transform {
-                    transform: var(--tw-rotate-x)var(--tw-rotate-y)var(--tw-rotate-z)var(--tw-skew-x)var(--tw-skew-y)
-                }
-
-                .flex-col {
-                    flex-direction: column
-                }
-
-                .flex-col-reverse {
-                    flex-direction: column-reverse
-                }
-
-                .items-center {
-                    align-items: center
-                }
-
-                .justify-center {
-                    justify-content: center
-                }
-
-                .justify-end {
-                    justify-content: flex-end
-                }
-
-                .gap-3 {
-                    gap: calc(var(--spacing)*3)
-                }
-
-                .gap-4 {
-                    gap: calc(var(--spacing)*4)
-                }
-
-                :where(.space-x-1>:not(:last-child)) {
-                    --tw-space-x-reverse: 0;
-                    margin-inline-start: calc(calc(var(--spacing)*1)*var(--tw-space-x-reverse));
-                    margin-inline-end: calc(calc(var(--spacing)*1)*calc(1 - var(--tw-space-x-reverse)))
-                }
-
-                .overflow-hidden {
-                    overflow: hidden
-                }
-
-                .rounded-full {
-                    border-radius: 3.40282e38px
-                }
-
-                .rounded-sm {
-                    border-radius: var(--radius-sm)
-                }
-
-                .rounded-t-lg {
-                    border-top-left-radius: var(--radius-lg);
-                    border-top-right-radius: var(--radius-lg)
-                }
-
-                .rounded-br-lg {
-                    border-bottom-right-radius: var(--radius-lg)
-                }
-
-                .rounded-bl-lg {
-                    border-bottom-left-radius: var(--radius-lg)
-                }
-
-                .border {
-                    border-style: var(--tw-border-style);
-                    border-width: 1px
-                }
-
-                .border-\[\#19140035\] {
-                    border-color: #19140035
-                }
-
-                .border-\[\#e3e3e0\] {
-                    border-color: #e3e3e0
-                }
-
-                .border-black {
-                    border-color: var(--color-black)
-                }
-
-                .border-transparent {
-                    border-color: #0000
-                }
-
-                .bg-\[\#1b1b18\] {
-                    background-color: #1b1b18
-                }
-
-                .bg-\[\#FDFDFC\] {
-                    background-color: #fdfdfc
-                }
-
-                .bg-\[\#dbdbd7\] {
-                    background-color: #dbdbd7
-                }
-
-                .bg-\[\#fff2f2\] {
-                    background-color: #fff2f2
-                }
-
-                .bg-white {
-                    background-color: var(--color-white)
-                }
-
-                .p-6 {
-                    padding: calc(var(--spacing)*6)
-                }
-
-                .px-5 {
-                    padding-inline: calc(var(--spacing)*5)
-                }
-
-                .py-1 {
-                    padding-block: calc(var(--spacing)*1)
-                }
-
-                .py-1\.5 {
-                    padding-block: calc(var(--spacing)*1.5)
-                }
-
-                .py-2 {
-                    padding-block: calc(var(--spacing)*2)
-                }
-
-                .pb-12 {
-                    padding-bottom: calc(var(--spacing)*12)
-                }
-
-                .text-sm {
-                    font-size: var(--text-sm);
-                    line-height: var(--tw-leading, var(--text-sm--line-height))
-                }
-
-                .text-\[13px\] {
-                    font-size: 13px
-                }
-
-                .leading-\[20px\] {
-                    --tw-leading: 20px;
-                    line-height: 20px
-                }
-
-                .leading-normal {
-                    --tw-leading: var(--leading-normal);
-                    line-height: var(--leading-normal)
-                }
-
-                .font-medium {
-                    --tw-font-weight: var(--font-weight-medium);
-                    font-weight: var(--font-weight-medium)
-                }
-
-                .text-\[\#1b1b18\] {
-                    color: #1b1b18
-                }
-
-                .text-\[\#706f6c\] {
-                    color: #706f6c
-                }
-
-                .text-\[\#F53003\],
-                .text-\[\#f53003\] {
-                    color: #f53003
-                }
-
-                .text-white {
-                    color: var(--color-white)
-                }
-
-                .underline {
-                    text-decoration-line: underline
-                }
-
-                .underline-offset-4 {
-                    text-underline-offset: 4px
-                }
-
-                .opacity-100 {
-                    opacity: 1
-                }
-
-                .shadow-\[0px_0px_1px_0px_rgba\(0\,0\,0\,0\.03\)\,0px_1px_2px_0px_rgba\(0\,0\,0\,0\.06\)\] {
-                    --tw-shadow: 0px 0px 1px 0px var(--tw-shadow-color, #00000008), 0px 1px 2px 0px var(--tw-shadow-color, #0000000f);
-                    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
-                }
-
-                .shadow-\[inset_0px_0px_0px_1px_rgba\(26\,26\,0\,0\.16\)\] {
-                    --tw-shadow: inset 0px 0px 0px 1px var(--tw-shadow-color, #1a1a0029);
-                    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
-                }
-
-                .\!filter {
-                    filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, ) !important
-                }
-
-                .filter {
-                    filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, )
-                }
-
-                .transition-all {
-                    transition-property: all;
-                    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-                    transition-duration: var(--tw-duration, var(--default-transition-duration))
-                }
-
-                .transition-opacity {
-                    transition-property: opacity;
-                    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-                    transition-duration: var(--tw-duration, var(--default-transition-duration))
-                }
-
-                .delay-300 {
-                    transition-delay: .3s
-                }
-
-                .duration-750 {
-                    --tw-duration: .75s;
-                    transition-duration: .75s
-                }
-
-                .not-has-\[nav\]\:hidden:not(:has(:is(nav))) {
-                    display: none
-                }
-
-                .before\:absolute:before {
-                    content: var(--tw-content);
-                    position: absolute
-                }
-
-                .before\:top-0:before {
-                    content: var(--tw-content);
-                    top: calc(var(--spacing)*0)
-                }
-
-                .before\:top-1\/2:before {
-                    content: var(--tw-content);
-                    top: 50%
-                }
-
-                .before\:bottom-0:before {
-                    content: var(--tw-content);
-                    bottom: calc(var(--spacing)*0)
-                }
-
-                .before\:bottom-1\/2:before {
-                    content: var(--tw-content);
-                    bottom: 50%
-                }
-
-                .before\:left-\[0\.4rem\]:before {
-                    content: var(--tw-content);
-                    left: .4rem
-                }
-
-                .before\:border-l:before {
-                    content: var(--tw-content);
-                    border-left-style: var(--tw-border-style);
-                    border-left-width: 1px
-                }
-
-                .before\:border-\[\#e3e3e0\]:before {
-                    content: var(--tw-content);
-                    border-color: #e3e3e0
-                }
-
-                @media (hover:hover) {
-                    .hover\:border-\[\#1915014a\]:hover {
-                        border-color: #1915014a
-                    }
-
-                    .hover\:border-\[\#19140035\]:hover {
-                        border-color: #19140035
-                    }
-
-                    .hover\:border-black:hover {
-                        border-color: var(--color-black)
-                    }
-
-                    .hover\:bg-black:hover {
-                        background-color: var(--color-black)
-                    }
-                }
-
-                @media (width>=64rem) {
-                    .lg\:-mt-\[6\.6rem\] {
-                        margin-top: -6.6rem
-                    }
-
-                    .lg\:mb-0 {
-                        margin-bottom: calc(var(--spacing)*0)
-                    }
-
-                    .lg\:mb-6 {
-                        margin-bottom: calc(var(--spacing)*6)
-                    }
-
-                    .lg\:-ml-px {
-                        margin-left: -1px
-                    }
-
-                    .lg\:ml-0 {
-                        margin-left: calc(var(--spacing)*0)
-                    }
-
-                    .lg\:block {
-                        display: block
-                    }
-
-                    .lg\:aspect-auto {
-                        aspect-ratio: auto
-                    }
-
-                    .lg\:w-\[438px\] {
-                        width: 438px
-                    }
-
-                    .lg\:max-w-4xl {
-                        max-width: var(--container-4xl)
-                    }
-
-                    .lg\:grow {
-                        flex-grow: 1
-                    }
-
-                    .lg\:flex-row {
-                        flex-direction: row
-                    }
-
-                    .lg\:justify-center {
-                        justify-content: center
-                    }
-
-                    .lg\:rounded-t-none {
-                        border-top-left-radius: 0;
-                        border-top-right-radius: 0
-                    }
-
-                    .lg\:rounded-tl-lg {
-                        border-top-left-radius: var(--radius-lg)
-                    }
-
-                    .lg\:rounded-r-lg {
-                        border-top-right-radius: var(--radius-lg);
-                        border-bottom-right-radius: var(--radius-lg)
-                    }
-
-                    .lg\:rounded-br-none {
-                        border-bottom-right-radius: 0
-                    }
-
-                    .lg\:p-8 {
-                        padding: calc(var(--spacing)*8)
-                    }
-
-                    .lg\:p-20 {
-                        padding: calc(var(--spacing)*20)
-                    }
-                }
-
-                @media (prefers-color-scheme:dark) {
-                    .dark\:block {
-                        display: block
-                    }
-
-                    .dark\:hidden {
-                        display: none
-                    }
-
-                    .dark\:border-\[\#3E3E3A\] {
-                        border-color: #3e3e3a
-                    }
-
-                    .dark\:border-\[\#eeeeec\] {
-                        border-color: #eeeeec
-                    }
-
-                    .dark\:bg-\[\#0a0a0a\] {
-                        background-color: #0a0a0a
-                    }
-
-                    .dark\:bg-\[\#1D0002\] {
-                        background-color: #1d0002
-                    }
-
-                    .dark\:bg-\[\#3E3E3A\] {
-                        background-color: #3e3e3a
-                    }
-
-                    .dark\:bg-\[\#161615\] {
-                        background-color: #161615
-                    }
-
-                    .dark\:bg-\[\#eeeeec\] {
-                        background-color: #eeeeec
-                    }
-
-                    .dark\:text-\[\#1C1C1A\] {
-                        color: #1c1c1a
-                    }
-
-                    .dark\:text-\[\#A1A09A\] {
-                        color: #a1a09a
-                    }
-
-                    .dark\:text-\[\#EDEDEC\] {
-                        color: #ededec
-                    }
-
-                    .dark\:text-\[\#F61500\] {
-                        color: #f61500
-                    }
-
-                    .dark\:text-\[\#FF4433\] {
-                        color: #f43
-                    }
-
-                    .dark\:shadow-\[inset_0px_0px_0px_1px_\#fffaed2d\] {
-                        --tw-shadow: inset 0px 0px 0px 1px var(--tw-shadow-color, #fffaed2d);
-                        box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
-                    }
-
-                    .dark\:before\:border-\[\#3E3E3A\]:before {
-                        content: var(--tw-content);
-                        border-color: #3e3e3a
-                    }
-
-                    @media (hover:hover) {
-                        .dark\:hover\:border-\[\#3E3E3A\]:hover {
-                            border-color: #3e3e3a
-                        }
-
-                        .dark\:hover\:border-\[\#62605b\]:hover {
-                            border-color: #62605b
-                        }
-
-                        .dark\:hover\:border-white:hover {
-                            border-color: var(--color-white)
-                        }
-
-                        .dark\:hover\:bg-white:hover {
-                            background-color: var(--color-white)
-                        }
-                    }
-                }
-
-                @starting-style {
-                    .starting\:translate-y-4 {
-                        --tw-translate-y: calc(var(--spacing)*4);
-                        translate: var(--tw-translate-x)var(--tw-translate-y)
-                    }
-                }
-
-                @starting-style {
-                    .starting\:translate-y-6 {
-                        --tw-translate-y: calc(var(--spacing)*6);
-                        translate: var(--tw-translate-x)var(--tw-translate-y)
-                    }
-                }
-
-                @starting-style {
-                    .starting\:opacity-0 {
-                        opacity: 0
-                    }
-                }
-            }
-
-            @keyframes spin {
-                to {
-                    transform: rotate(360deg)
-                }
-            }
-
-            @keyframes ping {
-
-                75%,
-                to {
-                    opacity: 0;
-                    transform: scale(2)
-                }
-            }
-
-            @keyframes pulse {
-                50% {
-                    opacity: .5
-                }
-            }
-
-            @keyframes bounce {
-
-                0%,
-                to {
-                    animation-timing-function: cubic-bezier(.8, 0, 1, 1);
-                    transform: translateY(-25%)
-                }
-
-                50% {
-                    animation-timing-function: cubic-bezier(0, 0, .2, 1);
-                    transform: none
-                }
-            }
-
-            @property --tw-translate-x {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0
-            }
-
-            @property --tw-translate-y {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0
-            }
-
-            @property --tw-translate-z {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0
-            }
-
-            @property --tw-rotate-x {
-                syntax: "*";
-                inherits: false;
-                initial-value: rotateX(0)
-            }
-
-            @property --tw-rotate-y {
-                syntax: "*";
-                inherits: false;
-                initial-value: rotateY(0)
-            }
-
-            @property --tw-rotate-z {
-                syntax: "*";
-                inherits: false;
-                initial-value: rotateZ(0)
-            }
-
-            @property --tw-skew-x {
-                syntax: "*";
-                inherits: false;
-                initial-value: skewX(0)
-            }
-
-            @property --tw-skew-y {
-                syntax: "*";
-                inherits: false;
-                initial-value: skewY(0)
-            }
-
-            @property --tw-space-x-reverse {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0
-            }
-
-            @property --tw-border-style {
-                syntax: "*";
-                inherits: false;
-                initial-value: solid
-            }
-
-            @property --tw-leading {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-font-weight {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-shadow {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0 0 #0000
-            }
-
-            @property --tw-shadow-color {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-inset-shadow {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0 0 #0000
-            }
-
-            @property --tw-inset-shadow-color {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-ring-color {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-ring-shadow {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0 0 #0000
-            }
-
-            @property --tw-inset-ring-color {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-inset-ring-shadow {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0 0 #0000
-            }
-
-            @property --tw-ring-inset {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-ring-offset-width {
-                syntax: "<length>";
-                inherits: false;
-                initial-value: 0
-            }
-
-            @property --tw-ring-offset-color {
-                syntax: "*";
-                inherits: false;
-                initial-value: #fff
-            }
-
-            @property --tw-ring-offset-shadow {
-                syntax: "*";
-                inherits: false;
-                initial-value: 0 0 #0000
-            }
-
-            @property --tw-blur {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-brightness {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-contrast {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-grayscale {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-hue-rotate {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-invert {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-opacity {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-saturate {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-sepia {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-drop-shadow {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-duration {
-                syntax: "*";
-                inherits: false
-            }
-
-            @property --tw-content {
-                syntax: "*";
-                inherits: false;
-                initial-value: ""
-            }
-        </style>
-    @endif
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-@php
-    $dataContent = [
-        [
-            "title" => "Hành động hôm nay, có việc ngày mai",
-            "description" => "Chống thất nghiệp không chỉ là trách nhiệm của nhà nước, mà là hành động chung của cộng đồng và doanh nghiệp."
-        ],
-        [
-            "title" => "Thay vì chờ việc, hãy tạo việc",
-            "description" => "Tinh thần khởi nghiệp là chìa khóa giúp người lao động vượt qua khó khăn, đặc biệt trong thời kỳ kinh tế biến động."
-        ],
-        [
-            "title" => "Cơ hội luôn có – nếu bạn sẵn sàng",
-            "description" => "Nâng cao kỹ năng, chủ động thích nghi – chính là bước đầu để thoát khỏi thất nghiệp."
-        ],
-        [
-            "title" => "Một cộng đồng vững mạnh là cộng đồng không ai thất nghiệp",
-            "description" => "Tạo cơ hội cho một người, là tạo sức sống cho cả xã hội."
-        ],
-        [
-            "title" => "Không có công việc tạm thời – chỉ có bước đệm dài hạn",
-            "description" => "Dù là freelance hay part-time, mỗi công việc đều có giá trị và dẫn đến một cánh cửa mới."
-        ]
-    ];
-@endphp
-
 <body>
-    <div class="landingPage-container">
+    <!-- Sound Toggle -->
+    <!-- <div class="sound-toggle muted" id="soundToggle">🔇</div> -->
 
-        <!-- Banner -->
-        <div class="job-banner">
-            <div class="job-banner-content">
-                <h1 class="job-banner-title">AI7-Chống thất nghiệp</h1>
-                <h2 class="job-banner-desc">
-                    Biến khó khăn thành cơ hội – hãy để công nghệ dẫn lối bạn đến công việc mơ ước!
-                </h2>
-                <a href="https://idai.vn/chong-that-nghiep" class="btn btn-primary">Khám phá ngay</a>
-            </div>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor" style="left: 943px; top: 65px;"></div>
+
+    <!-- Particles Background -->
+    <div class="particles-container" id="particles">
+        <div class="particle"
+            style="left: 97.7595%; top: 14.0623%; width: 5.54602px; height: 5.54602px; animation-delay: 5.17017s; animation-duration: 6.86873s;">
         </div>
-
-        <!-- Giới thiệu -->
-        <div class="padding-common">
-            <div class="introduce-container">
-                <div class="image-section">
-                    <div class="main-image">
-                        <img src="{{ asset('image/img1.png') }}" alt="Chống thất nghiệp" class="img" />
-                    </div>
-                    <div class="sub-image">
-                        <img src="{{ asset('image/Freelancer.png') }}" alt="Freelancer" class="img" />
-                    </div>
-                </div>
-
-                <div class="text-section">
-                    <h2 class="heading">Giải pháp Chống Thất Nghiệp &amp; Hỗ trợ Freelancer</h2>
-                    <h3 class="subheading">
-                        <strong class="green">AI7-Chống thất nghiệp kết nối bạn với hàng ngàn cơ hội việc làm linh hoạt.</strong>
-                    </h3>
-                    <h3 class="description">
-                        Dù bạn đang tìm việc tạm thời, chuyển đổi nghề hay khởi nghiệp cá nhân, nền tảng IDAI giúp bạn
-                        tiếp cận công việc phù hợp theo năng lực, vị trí và kỹ năng cá nhân.
-                    </h3>
-
-                    <div class="features">
-                        <div class="feature-item">
-                            <i class="fa fa-laptop" aria-hidden="true"></i>
-                            <span>Cơ hội việc làm<br>Freelance &amp; Remote</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                            <span>Khóa học nâng cao<br>kỹ năng nghề nghiệp</span>
-                        </div>
-                    </div>
-
-                    <a href="https://idai.vn/chong-that-nghiep/freelancer" class="btn btn-primary">Khám phá ngay</a>
-
-                </div>
-            </div>
+        <div class="particle"
+            style="left: 93.5844%; top: 21.2975%; width: 3.95414px; height: 3.95414px; animation-delay: 1.26297s; animation-duration: 5.02567s;">
         </div>
-        <div class="job_introduce_container"></div>
-        <div class="padding-common">
-            <div class="slogan-container">
-                <div class="flex flex-wrap items-center -mx-4 gap-y-10">
-                    <!-- Cột ảnh -->
-                    <div class="w-full md:w-5/12 lg:w-1/3 px-4">
-                        <div class="rightImg">
-                            <img src="{{ asset('image/banner3.png') }}" alt="Chống thất nghiệp" class="image" />
-                        </div>
-                    </div>
-
-                    <!-- Cột nội dung -->
-                    <div class="w-full md:w-7/12 lg:w-2/3 px-4">
-                        <ul class="stepList">
-                            @foreach ($dataContent as $item)
-                                <li class="stepItem">
-                                    <div class="stepCircle">
-                                        <i class="fa fa-check" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="stepContent">
-                                        <h3>{{ $item['title'] }}</h3>
-                                        <p>{{ $item['description'] }}</p>
-                                    </div>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="particle"
+            style="left: 5.31221%; top: 81.7384%; width: 3.009px; height: 3.009px; animation-delay: 2.15857s; animation-duration: 7.316s;">
+        </div>
+        <div class="particle"
+            style="left: 48.9966%; top: 62.6052%; width: 2.63709px; height: 2.63709px; animation-delay: 3.10775s; animation-duration: 4.5421s;">
+        </div>
+        <div class="particle"
+            style="left: 52.9182%; top: 36.189%; width: 2.97939px; height: 2.97939px; animation-delay: 1.71137s; animation-duration: 7.83836s;">
+        </div>
+        <div class="particle"
+            style="left: 71.475%; top: 96.5547%; width: 3.10166px; height: 3.10166px; animation-delay: 1.12083s; animation-duration: 6.61675s;">
+        </div>
+        <div class="particle"
+            style="left: 70.4051%; top: 49.4511%; width: 3.83072px; height: 3.83072px; animation-delay: 1.79498s; animation-duration: 4.35352s;">
+        </div>
+        <div class="particle"
+            style="left: 64.8831%; top: 40.8423%; width: 3.70749px; height: 3.70749px; animation-delay: 2.43148s; animation-duration: 4.28472s;">
+        </div>
+        <div class="particle"
+            style="left: 32.1006%; top: 45.0214%; width: 4.92906px; height: 4.92906px; animation-delay: 0.41309s; animation-duration: 5.56129s;">
+        </div>
+        <div class="particle"
+            style="left: 77.4704%; top: 67.2799%; width: 2.5378px; height: 2.5378px; animation-delay: 2.41963s; animation-duration: 6.38659s;">
+        </div>
+        <div class="particle"
+            style="left: 31.0551%; top: 38.4757%; width: 5.82648px; height: 5.82648px; animation-delay: 2.11985s; animation-duration: 5.62287s;">
+        </div>
+        <div class="particle"
+            style="left: 17.4408%; top: 79.9595%; width: 5.45178px; height: 5.45178px; animation-delay: 4.61754s; animation-duration: 5.4992s;">
+        </div>
+        <div class="particle"
+            style="left: 12.7933%; top: 2.59074%; width: 4.94046px; height: 4.94046px; animation-delay: 3.02798s; animation-duration: 7.87659s;">
+        </div>
+        <div class="particle"
+            style="left: 9.77153%; top: 11.707%; width: 2.62923px; height: 2.62923px; animation-delay: 3.67942s; animation-duration: 5.44771s;">
+        </div>
+        <div class="particle"
+            style="left: 82.0594%; top: 5.27261%; width: 4.40114px; height: 4.40114px; animation-delay: 2.31822s; animation-duration: 7.72214s;">
+        </div>
+        <div class="particle"
+            style="left: 15.1282%; top: 46.8379%; width: 4.20883px; height: 4.20883px; animation-delay: 0.747988s; animation-duration: 4.62132s;">
+        </div>
+        <div class="particle"
+            style="left: 15.3844%; top: 80.3589%; width: 4.0002px; height: 4.0002px; animation-delay: 1.3914s; animation-duration: 4.97481s;">
+        </div>
+        <div class="particle"
+            style="left: 38.6474%; top: 16.5682%; width: 3.34201px; height: 3.34201px; animation-delay: 1.97669s; animation-duration: 7.04872s;">
+        </div>
+        <div class="particle"
+            style="left: 34.9469%; top: 39.7267%; width: 3.21632px; height: 3.21632px; animation-delay: 3.30873s; animation-duration: 5.26472s;">
+        </div>
+        <div class="particle"
+            style="left: 96.5246%; top: 6.05455%; width: 5.29826px; height: 5.29826px; animation-delay: 4.0875s; animation-duration: 7.55835s;">
+        </div>
+        <div class="particle"
+            style="left: 70.2641%; top: 14.6062%; width: 4.78148px; height: 4.78148px; animation-delay: 1.29638s; animation-duration: 4.08027s;">
+        </div>
+        <div class="particle"
+            style="left: 0.71192%; top: 71.382%; width: 2.30862px; height: 2.30862px; animation-delay: 1.67593s; animation-duration: 7.02125s;">
+        </div>
+        <div class="particle"
+            style="left: 38.6347%; top: 47.2953%; width: 2.89956px; height: 2.89956px; animation-delay: 5.65325s; animation-duration: 7.23558s;">
+        </div>
+        <div class="particle"
+            style="left: 59.63%; top: 47.1664%; width: 4.17918px; height: 4.17918px; animation-delay: 0.477788s; animation-duration: 7.03834s;">
+        </div>
+        <div class="particle"
+            style="left: 63.2939%; top: 38.7102%; width: 3.41521px; height: 3.41521px; animation-delay: 3.26396s; animation-duration: 6.43201s;">
+        </div>
+        <div class="particle"
+            style="left: 2.52231%; top: 78.8308%; width: 2.13809px; height: 2.13809px; animation-delay: 1.89898s; animation-duration: 4.90701s;">
+        </div>
+        <div class="particle"
+            style="left: 14.4918%; top: 62.5787%; width: 2.80067px; height: 2.80067px; animation-delay: 0.947596s; animation-duration: 7.1054s;">
+        </div>
+        <div class="particle"
+            style="left: 56.7013%; top: 27.6813%; width: 5.18838px; height: 5.18838px; animation-delay: 4.9877s; animation-duration: 4.25747s;">
+        </div>
+        <div class="particle"
+            style="left: 26.8678%; top: 2.83792%; width: 5.39809px; height: 5.39809px; animation-delay: 5.71159s; animation-duration: 6.84464s;">
+        </div>
+        <div class="particle"
+            style="left: 98.6873%; top: 97.606%; width: 5.84138px; height: 5.84138px; animation-delay: 5.61206s; animation-duration: 7.76856s;">
+        </div>
+        <div class="particle"
+            style="left: 55.1624%; top: 11.8684%; width: 5.09682px; height: 5.09682px; animation-delay: 5.36457s; animation-duration: 4.82258s;">
+        </div>
+        <div class="particle"
+            style="left: 29.5962%; top: 81.2853%; width: 5.13204px; height: 5.13204px; animation-delay: 4.64078s; animation-duration: 5.43542s;">
+        </div>
+        <div class="particle"
+            style="left: 44.8446%; top: 44.6996%; width: 4.28854px; height: 4.28854px; animation-delay: 0.954053s; animation-duration: 5.94398s;">
+        </div>
+        <div class="particle"
+            style="left: 90.6506%; top: 41.5474%; width: 2.07619px; height: 2.07619px; animation-delay: 5.23304s; animation-duration: 7.80975s;">
+        </div>
+        <div class="particle"
+            style="left: 47.2385%; top: 91.729%; width: 2.97896px; height: 2.97896px; animation-delay: 5.378s; animation-duration: 6.94073s;">
+        </div>
+        <div class="particle"
+            style="left: 64.0651%; top: 2.47222%; width: 2.5029px; height: 2.5029px; animation-delay: 1.01371s; animation-duration: 6.99601s;">
+        </div>
+        <div class="particle"
+            style="left: 82.7421%; top: 31.6791%; width: 5.66194px; height: 5.66194px; animation-delay: 3.054s; animation-duration: 7.47863s;">
+        </div>
+        <div class="particle"
+            style="left: 55.0821%; top: 68.9618%; width: 3.82948px; height: 3.82948px; animation-delay: 1.1709s; animation-duration: 5.57712s;">
+        </div>
+        <div class="particle"
+            style="left: 4.49469%; top: 77.1166%; width: 5.37933px; height: 5.37933px; animation-delay: 1.75576s; animation-duration: 6.35733s;">
+        </div>
+        <div class="particle"
+            style="left: 43.3948%; top: 12.8111%; width: 5.52711px; height: 5.52711px; animation-delay: 0.190043s; animation-duration: 6.20734s;">
+        </div>
+        <div class="particle"
+            style="left: 58.9678%; top: 64.8573%; width: 2.56321px; height: 2.56321px; animation-delay: 1.6919s; animation-duration: 4.75296s;">
+        </div>
+        <div class="particle"
+            style="left: 39.6763%; top: 71.9241%; width: 3.20265px; height: 3.20265px; animation-delay: 0.820789s; animation-duration: 4.24745s;">
+        </div>
+        <div class="particle"
+            style="left: 84.7291%; top: 39.5718%; width: 3.20497px; height: 3.20497px; animation-delay: 1.8036s; animation-duration: 5.55609s;">
+        </div>
+        <div class="particle"
+            style="left: 58.8149%; top: 3.92122%; width: 3.61308px; height: 3.61308px; animation-delay: 1.41856s; animation-duration: 6.78688s;">
+        </div>
+        <div class="particle"
+            style="left: 69.8065%; top: 38.6098%; width: 2.9897px; height: 2.9897px; animation-delay: 3.21301s; animation-duration: 5.78023s;">
+        </div>
+        <div class="particle"
+            style="left: 84.4503%; top: 26.9198%; width: 2.44102px; height: 2.44102px; animation-delay: 3.97596s; animation-duration: 4.1192s;">
+        </div>
+        <div class="particle"
+            style="left: 72.9538%; top: 11.0575%; width: 3.97066px; height: 3.97066px; animation-delay: 1.4073s; animation-duration: 4.00909s;">
+        </div>
+        <div class="particle"
+            style="left: 94.2611%; top: 65.2792%; width: 2.57196px; height: 2.57196px; animation-delay: 4.18519s; animation-duration: 4.47367s;">
+        </div>
+        <div class="particle"
+            style="left: 88.7473%; top: 40.3187%; width: 5.58304px; height: 5.58304px; animation-delay: 1.80975s; animation-duration: 7.40585s;">
+        </div>
+        <div class="particle"
+            style="left: 3.52056%; top: 54.266%; width: 5.66392px; height: 5.66392px; animation-delay: 4.4027s; animation-duration: 6.26211s;">
         </div>
     </div>
-    <div class="footer_container">
-        <div class="flex flex-wrap gap-y-4">
-            <div class="w-full sm:w-1/2 lg:w-1/2">
-                <div class="flex flex-col gap-4">
-                    <img src="{{ asset('image/logo.png') }}" alt="logo" width="200" height="200">
-                    <div class="address">
-                        <h2>Liên hệ</h2>
-                        <ul class="address_links list-unstyled">
-                            <li><i class="fa-solid fa-building"></i> CÔNG TY TNHH ĐẦU TƯ CÔNG NGHỆ TECHBYTE</li>
-                            <li><i class="fa-solid fa-file-invoice"></i> Mã số thuế: 0110801570</li>
-                            <li><i class="fa-solid fa-phone"></i> 0973.454.140</li>
-                            <li><i class="fa-solid fa-envelope"></i> ai@idai.vn</li>
-                            <li class="address1"><i class="fa-solid fa-location-dot"></i> Trụ sở chính: Số nhà 10, dãy
-                                H, Khu tập thể Công an Đa Sỹ, Phường Kiến Hưng, Quận Hà Đông Thành phố Hà Nội, Việt Nam
-                            </li>
-                            <li class="address1"><i class="fa-solid fa-location-dot"></i> Văn phòng giao dịch: Nhà 2B,
-                                110 Đường Nguyễn Hoàng Tôn, Xuân La, Tây Hồ, Hà Nội</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
 
-            <div class="w-full sm:w-1/2 lg:w-1/4">
-                <div class="social_links">
-                    <h2>Mạng xã hội</h2>
-                    <ul class="social_icons list-unstyled">
-                        <li><a href="https://www.facebook.com/idai.vn/" target="_blank"><i
-                                    class="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li><a href="https://www.tiktok.com/@idai.vn?_t=8qyMFYoJZQm&_r=1" target="_blank"><i
-                                    class="fa-brands fa-tiktok"></i> Tiktok</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCW3HksNISmDo6w1Ft3fxAIw?sub_confirmation=1"
-                                target="_blank"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-                        <li><a href="https://t.me/sp_idai" target="_blank"><i class="fa-brands fa-telegram"></i>
-                                Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
+    <!-- Floating 3D Robots -->
+    <!-- <div class="floating-robot" style="top: 10%; left: 5%; animation-delay: 0s;">🤖</div>
+    <div class="floating-robot" style="top: 20%; right: 10%; animation-delay: 2s;">🦾</div>
+    <div class="floating-robot" style="bottom: 30%; left: 15%; animation-delay: 4s;">🔮</div>
+    <div class="floating-robot" style="bottom: 20%; right: 5%; animation-delay: 6s;">⚡</div> -->
 
-            <div class="w-full sm:w-1/2 lg:w-1/4">
-                <div class="address">
-                    <h2>Chính sách</h2>
-                    <ul class="address_links list-unstyled">
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Chính Sách Về Quyền Riêng Tư</a></li>
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Thỏa Thuận Sử Dụng Dịch Vụ</a></li>
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Chính Sách Hoàn Trả</a></li>
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Tiêu Chuẩn Dịch Vụ</a></li>
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Chính Sách Bàn Giao</a></li>
-                        <li><a href=""><i class="fa-solid fa-caret-down"></i> Chính Sách Thanh Toán</a></li>
-                    </ul>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="scramble-text" id="heroTitle" data-text="TÌM VIỆC IT KHÓ? ĐỂ AI LO.">TÌM VIỆC IT KHÓ? ĐỂ AI LO.</h1>
+        <p class="hero-subtitle">
+            Hệ thống AI matching việc làm trong <span class="counter-highlight" id="timeCounter">3</span> giây
+        </p>
+        <a href="https://idai.vn/chong-that-nghiep">
+            <button class="cta-button" id="mainCTA">
+                <span id="ctaText">TÌM VIỆC NGAY</span>
+            </button>
+        </a>
+
+        <!-- Floating Code Elements -->
+        <div class="floating-code" style="top: 20%; left: 10%;">const job = findJob();</div>
+        <div class="floating-code" style="top: 60%; right: 15%;">if (skills.match(job)) { hired = true; }</div>
+        <div class="floating-code" style="top: 40%; left: 80%;">AI.recommend(developer);</div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="pain-section scroll-reveal revealed">
+        <h2 class="section-title">Nỗi Đau Của Dân IT</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number animated" data-target="71">71</div>
+                <div class="stat-label">% dân IT mới ra trường khó tìm việc</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number animated" data-target="4.7">4</div>
+                <div class="stat-label">tháng trung bình để tìm việc IT đầu tiên</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number animated" data-target="89">89</div>
+                <div class="stat-label">% bị từ chối vì "thiếu kinh nghiệm"</div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- AI Matching Section -->
+    <section class="ai-section scroll-reveal revealed">
+        <h2 class="section-title">AI Matching Thông Minh</h2>
+        <div class="ai-robot">🤖</div>
+        <div class="countdown" id="countdown" style="color: rgb(0, 255, 0); font-size: 2.5rem;">✨ CÓ VIỆC! ✨</div>
+        <p style="font-size: 1.5rem; margin: 2rem 0;">
+            <span class="counter-highlight animated" data-target="97">97</span>% độ chính xác matching
+        </p>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="scroll-reveal revealed" style="padding: 100px 20px; text-align: center;">
+        <h2 class="section-title">Ngành Nghề Hot</h2>
+        <div class="tech-grid">
+            <div class="tech-item" data-jobs="432">
+                <span class="tech-icon">⚛️</span>
+                <div class="tech-name">Frontend</div>
+                <div class="job-count">432 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="287">
+                <span class="tech-icon">🔧</span>
+                <div class="tech-name">Backend</div>
+                <div class="job-count">287 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="156">
+                <span class="tech-icon">📱</span>
+                <div class="tech-name">Mobile</div>
+                <div class="job-count">156 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="203">
+                <span class="tech-icon">🤖</span>
+                <div class="tech-name">AI/ML</div>
+                <div class="job-count">203 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="178">
+                <span class="tech-icon">☁️</span>
+                <div class="tech-name">DevOps</div>
+                <div class="job-count">178 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="234">
+                <span class="tech-icon">🎨</span>
+                <div class="tech-name">UI/UX</div>
+                <div class="job-count">234 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="198">
+                <span class="tech-icon">💼</span>
+                <div class="tech-name">Project Manager</div>
+                <div class="job-count">198 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="142">
+                <span class="tech-icon">📊</span>
+                <div class="tech-name">Data Analyst</div>
+                <div class="job-count">142 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="165">
+                <span class="tech-icon">🛒</span>
+                <div class="tech-name">E-commerce</div>
+                <div class="job-count">165 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="102">
+                <span class="tech-icon">🔐</span>
+                <div class="tech-name">Cybersecurity</div>
+                <div class="job-count">102 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="120">
+                <span class="tech-icon">📢</span>
+                <div class="tech-name">Digital Marketing</div>
+                <div class="job-count">120 việc làm</div>
+            </div>
+            <div class="tech-item" data-jobs="89">
+                <span class="tech-icon">🎮</span>
+                <div class="tech-name">Game Developer</div>
+                <div class="job-count">89 việc làm</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Mini Tool -->
+    <section class="scroll-reveal" style="padding: 100px 20px; text-align: center;">
+        <h2 class="section-title">AI Job Recommender</h2>
+        <div class="mini-tool">
+            <p style="margin-bottom: 1rem; font-size: 1.2rem;">Chọn kỹ năng của bạn:</p>
+            <div class="skill-selector">
+                <div class="skill-tag" data-skill="React">React</div>
+                <div class="skill-tag" data-skill="Node.js">Node.js</div>
+                <div class="skill-tag" data-skill="Python">Python</div>
+                <div class="skill-tag" data-skill="Java">Java</div>
+                <div class="skill-tag" data-skill="Flutter">Flutter</div>
+                <div class="skill-tag" data-skill="AWS">AWS</div>
+                <div class="skill-tag" data-skill="TypeScript">TypeScript</div>
+                <div class="skill-tag" data-skill="Docker">Docker</div>
+                <div class="skill-tag" data-skill="Kubernetes">Kubernetes</div>
+                <div class="skill-tag" data-skill="Figma">Figma</div>
+                <div class="skill-tag" data-skill="MySQL">MySQL</div>
+                <div class="skill-tag" data-skill="MongoDB">MongoDB</div>
+                <div class="skill-tag" data-skill="Golang">Golang</div>
+                <div class="skill-tag" data-skill="C#">C#</div>
+                <div class="skill-tag" data-skill="Next.js">Next.js</div>
+                <div class="skill-tag" data-skill="Laravel">Laravel</div>
+
+            </div>
+            <div class="result-display" id="jobResult">
+                Chọn kỹ năng để xem việc làm phù hợp!
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Stats -->
+    <section class="scroll-reveal" style="padding: 100px 20px; text-align: center;">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="2457">0</div>
+                <div class="stat-label">+ việc làm mỗi tháng</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="1732">0</div>
+                <div class="stat-label">developer đã tìm được việc</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="700">0</div>
+                <div class="stat-label">$ mức lương trung bình</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MMO Course Popup -->
+    <div class="popup-overlay" id="mmoPopup">
+        <div class="popup">
+            <button class="popup-close" onclick="closePopup()">×</button>
+            <h3 class="" id="popupTitle">BẠN BIẾT LẬP TRÌNH, NHƯNG VẪN THẤT NGHIỆP?</h3>
+            <p style="margin: 1rem 0; font-size: 1.1rem;">
+                Khóa học MMO 3A: <span style="color: #00ffff;">AI - Automation - Affiliate</span>
+            </p>
+            <div style="font-size: 2rem; margin: 1rem 0;">📈💰🚀</div>
+            <a href="https://idai.vn/chong-that-nghiep">
+                <button class="popup-cta">XEM NGAY</button>
+            </a>
+            <div class="slots-counter" id="slotsCounter">Chỉ còn 12 slots!</div>
+
+            <!-- Floating Money Icons -->
+            <div class="floating-money" style="top: 20%; left: 10%;">💰</div>
+            <div class="floating-money" style="top: 30%; right: 15%; animation-delay: 1s;">💵</div>
+            <div class="floating-money" style="bottom: 20%; left: 20%; animation-delay: 2s;">💸</div>
+        </div>
     </div>
 
+    <!-- Konami Code Easter Egg -->
+    <div class="ai-hunter-mode" id="aiHunterMode">
+        <!-- <div class="hunter-text">🎯 AI JOB HUNTER MODE ACTIVATED! 🎯</div>
+        <div style="font-size: 2rem; color: #fff; text-align: center;">
+            🤖 SCANNING ALL JOBS IN THE UNIVERSE... 🌌<br>
+            <span style="color: #ffff00;">INFINITE OPPORTUNITIES DETECTED!</span>
+        </div>
+        <button onclick="closeHunterMode()"
+            style="margin-top: 2rem; padding: 1rem 2rem; font-size: 1.2rem; background: #fff; color: #000; border: none; border-radius: 10px; cursor: pointer;">
+            RETURN TO NORMAL MODE
+        </button> -->
+    </div>
+
+    <script>
+        // Sound Management
+        let soundEnabled = true;
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playSound(frequency, duration, type = 'sine') {
+            if (!soundEnabled) return;
+
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+
+            oscillator.frequency.value = frequency;
+            oscillator.type = type;
+
+            gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + duration);
+        }
+
+        // Sound Toggle
+        // document.getElementById('soundToggle').addEventListener('click', () => {
+        //     soundEnabled = !soundEnabled;
+        //     const toggle = document.getElementById('soundToggle');
+        //     toggle.textContent = soundEnabled ? '🔊' : '🔇';
+        //     toggle.classList.toggle('muted', !soundEnabled);
+        //     playSound(800, 0.1);
+        // });
+
+        // Enhanced Custom Cursor
+        const cursor = document.getElementById('cursor');
+        let mouseX = 0, mouseY = 0;
+        let trails = [];
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            cursor.style.left = mouseX + 'px';
+            cursor.style.top = mouseY + 'px';
+
+            // Enhanced trail with light particles
+            createTrail(mouseX, mouseY);
+
+            // Random light particles
+            if (Math.random() < 0.3) {
+                createLightParticle(mouseX, mouseY);
+            }
+        });
+
+        function createTrail(x, y) {
+            const trail = document.createElement('div');
+            trail.className = 'cursor-trail';
+            trail.style.left = x - 3 + 'px';
+            trail.style.top = y - 3 + 'px';
+            document.body.appendChild(trail);
+
+            setTimeout(() => {
+                trail.remove();
+            }, 800);
+        }
+
+        function createLightParticle(x, y) {
+            const particle = document.createElement('div');
+            particle.className = 'light-particle';
+            particle.style.left = x + (Math.random() - 0.5) * 20 + 'px';
+            particle.style.top = y + (Math.random() - 0.5) * 20 + 'px';
+            document.body.appendChild(particle);
+
+            setTimeout(() => {
+                particle.remove();
+            }, 2000);
+        }
+
+        // Cursor hover effects
+        document.addEventListener('mouseover', (e) => {
+            if (e.target.matches('button, .tech-item, .skill-tag, .stat-card')) {
+                cursor.classList.add('hover');
+                playSound(600, 0.05);
+            }
+        });
+
+        document.addEventListener('mouseout', (e) => {
+            if (e.target.matches('button, .tech-item, .skill-tag, .stat-card')) {
+                cursor.classList.remove('hover');
+            }
+        });
+
+        document.addEventListener('mousedown', () => {
+            cursor.classList.add('click');
+            playSound(400, 0.1);
+        });
+
+        document.addEventListener('mouseup', () => {
+            cursor.classList.remove('click');
+        });
+
+        // Text Scramble Effect
+        function scrambleText(element, finalText, duration = 2000) {
+            const chars = '!@#$%^&*()_+-=[]{}|;:,.<>?';
+            let frame = 0;
+            const totalFrames = duration / 50;
+
+            const timer = setInterval(() => {
+                let scrambled = '';
+                for (let i = 0; i < finalText.length; i++) {
+                    if (frame > totalFrames * (i / finalText.length)) {
+                        scrambled += finalText[i];
+                    } else {
+                        scrambled += chars[Math.floor(Math.random() * chars.length)];
+                    }
+                }
+                element.textContent = scrambled;
+
+                if (frame >= totalFrames) {
+                    clearInterval(timer);
+                    element.textContent = finalText;
+                }
+                frame++;
+            }, 50);
+        }
+
+        // Particles Animation
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                container.appendChild(particle);
+            }
+        }
+
+        // Typing Effect
+        function typeText(element, text, speed = 100) {
+            let i = 0;
+            element.textContent = '';
+            const timer = setInterval(() => {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    playSound(800 + Math.random() * 200, 0.05);
+                    i++;
+                } else {
+                    clearInterval(timer);
+                    element.classList.remove('typing-text');
+                }
+            }, speed);
+        }
+
+        // Counter Animation
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                    playSound(1000, 0.2);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        }
+
+        // Scroll Reveal Animation
+        function revealOnScroll() {
+            const reveals = document.querySelectorAll('.scroll-reveal');
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveal.getBoundingClientRect().top;
+                const elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('revealed');
+
+                    // Animate counters when revealed
+                    const counters = reveal.querySelectorAll('[data-target]');
+                    counters.forEach(counter => {
+                        if (!counter.classList.contains('animated')) {
+                            counter.classList.add('animated');
+                            const target = parseInt(counter.getAttribute('data-target'));
+                            animateCounter(counter, target);
+                        }
+                    });
+                }
+            });
+        }
+
+        // CTA Button Hover Effect
+        const ctaButton = document.getElementById('mainCTA');
+        const ctaText = document.getElementById('ctaText');
+
+        // ctaButton.addEventListener('mouseenter', () => {
+        //     ctaText.textContent = 'AI ĐANG TÌM VIỆC CHO BẠN...';
+        //     playSound(500, 0.3);
+        // });
+
+        ctaButton.addEventListener('mouseleave', () => {
+            ctaText.textContent = 'TÌM VIỆC NGAY';
+        });
+
+        // AI Countdown
+        function startCountdown() {
+            const countdown = document.getElementById('countdown');
+            const messages = ['3...', '2...', '1...', '✨ CÓ VIỆC! ✨'];
+            let i = 0;
+
+            const timer = setInterval(() => {
+                if (i < messages.length) {
+                    countdown.textContent = messages[i];
+                    playSound(800 - i * 100, 0.2);
+                    if (i === messages.length - 1) {
+                        countdown.style.color = '#00ff00';
+                        countdown.style.fontSize = '2.5rem';
+                        playSound(1200, 0.5);
+                    }
+                    i++;
+                } else {
+                    clearInterval(timer);
+                    setTimeout(() => {
+                        countdown.textContent = 'Đang quét CV...';
+                        countdown.style.color = '#ffff00';
+                        countdown.style.fontSize = '2rem';
+                        setTimeout(startCountdown, 3000);
+                    }, 2000);
+                }
+            }, 1000);
+        }
+
+        // Skill Selector
+        const skillTags = document.querySelectorAll('.skill-tag');
+        const jobResult = document.getElementById('jobResult');
+        let selectedSkills = [];
+
+        skillTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+                const skill = tag.getAttribute('data-skill');
+
+                if (tag.classList.contains('selected')) {
+                    tag.classList.remove('selected');
+                    selectedSkills = selectedSkills.filter(s => s !== skill);
+                    playSound(400, 0.1);
+                } else {
+                    tag.classList.add('selected');
+                    selectedSkills.push(skill);
+                    playSound(600, 0.1);
+                }
+
+                if (selectedSkills.length > 0) {
+                    const jobCount = selectedSkills.length * 87 + Math.floor(Math.random() * 50);
+                    jobResult.textContent = `🎯 Tìm thấy ${jobCount} việc làm phù hợp với bạn!`;
+                    jobResult.classList.add('show');
+                    playSound(800, 0.3);
+                } else {
+                    jobResult.classList.remove('show');
+                }
+            });
+        });
+
+        // MMO Popup
+        function showPopup() {
+            const popup = document.getElementById('mmoPopup');
+            const popupTitle = document.getElementById('popupTitle');
+            popup.classList.add('show');
+            typeText(popupTitle, 'BẠN BIẾT LẬP TRÌNH, NHƯNG VẪN THẤT NGHIỆP?', 50);
+            playSound(600, 0.5);
+
+            // Animate slots counter
+            let slots = 47;
+            const slotsCounter = document.getElementById('slotsCounter');
+            setInterval(() => {
+                if (slots > 12) {
+                    slots--;
+                    slotsCounter.textContent = `Chỉ còn ${slots} slots!`;
+                    if (slots % 5 === 0) playSound(900, 0.1);
+                }
+            }, 3000);
+        }
+
+        function closePopup() {
+            document.getElementById('mmoPopup').classList.remove('show');
+            playSound(400, 0.2);
+        }
+
+        // Floating Code Animation
+        function createFloatingCode() {
+            const codes = [
+                'const success = true;',
+                'while(unemployed) { findJob(); }',
+                'AI.match(developer, job);',
+                'if(skills > 0) { hired = true; }',
+                'function getJob() { return dream; }',
+                'let salary = Infinity;',
+                'async function findWork() { return await AI.search(); }',
+                'const jobOffer = await Promise.resolve(success);'
+            ];
+
+            setInterval(() => {
+                const code = document.createElement('div');
+                code.className = 'floating-code';
+                code.textContent = codes[Math.floor(Math.random() * codes.length)];
+                code.style.left = Math.random() * 80 + 10 + '%';
+                code.style.animationDuration = (Math.random() * 4 + 6) + 's';
+                document.body.appendChild(code);
+
+                setTimeout(() => {
+                    code.remove();
+                }, 8000);
+            }, 2000);
+        }
+
+        // Konami Code Easter Egg
+        let konamiCode = [];
+        const konamiSequence = [
+            'ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+            'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+            'KeyB', 'KeyA'
+        ];
+
+        document.addEventListener('keydown', (e) => {
+            konamiCode.push(e.code);
+
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+
+            if (konamiCode.length === konamiSequence.length) {
+                let match = true;
+                for (let i = 0; i < konamiSequence.length; i++) {
+                    if (konamiCode[i] !== konamiSequence[i]) {
+                        match = false;
+                        break;
+                    }
+                }
+
+                if (match) {
+                    activateHunterMode();
+                    konamiCode = [];
+                }
+            }
+        });
+
+        function activateHunterMode() {
+            const hunterMode = document.getElementById('aiHunterMode');
+            hunterMode.classList.add('active');
+
+            // Play epic sound sequence
+            playSound(200, 0.1);
+            setTimeout(() => playSound(400, 0.1), 100);
+            setTimeout(() => playSound(600, 0.1), 200);
+            setTimeout(() => playSound(800, 0.1), 300);
+            setTimeout(() => playSound(1000, 0.5), 400);
+
+            // Auto close after 5 seconds
+            setTimeout(() => {
+                closeHunterMode();
+            }, 5000);
+        }
+
+        function closeHunterMode() {
+            document.getElementById('aiHunterMode').classList.remove('active');
+            playSound(600, 0.3);
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+
+            // Text scramble effect for hero title
+            const heroTitle = document.getElementById('heroTitle');
+            scrambleText(heroTitle, 'TÌM VIỆC IT KHÓ? ĐỂ AI LO.', 3000);
+
+            // Animate time counter
+            setTimeout(() => {
+                animateCounter(document.getElementById('timeCounter'), 3, 1000);
+            }, 3500);
+
+            // Show popup after 3 seconds
+            setTimeout(showPopup, 3000);
+
+            // Start AI countdown
+            setTimeout(startCountdown, 5000);
+
+            // Start floating code
+            createFloatingCode();
+
+            // Play welcome sound
+            setTimeout(() => playSound(800, 0.3), 1000);
+        });
+
+        // Scroll event
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Initial reveal check
+        revealOnScroll();
+
+        // Add interaction sounds to all clickable elements
+        document.addEventListener('click', (e) => {
+            if (e.target.matches('button, .tech-item, .skill-tag')) {
+                playSound(700, 0.1);
+            }
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'960033eb20cc25e5',t:'MTc1MjY1NTMxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    <iframe height="1" width="1"
+        style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+    <div class="floating-code" style="left: 13.2659%; animation-duration: 8.69804s;">const jobOffer = await
+        Promise.resolve(success);</div>
+    <div class="floating-code" style="left: 50.7767%; animation-duration: 7.29874s;">async function findWork() { return
+        await AI.search(); }</div>
+    <div class="floating-code" style="left: 53.8006%; animation-duration: 7.38512s;">while(unemployed) { findJob(); }
+    </div>
+    <div class="floating-code" style="left: 40.0886%; animation-duration: 7.53088s;">while(unemployed) { findJob(); }
+    </div>
 </body>
 
 </html>
