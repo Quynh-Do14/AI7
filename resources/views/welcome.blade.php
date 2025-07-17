@@ -390,7 +390,7 @@
                 Khóa học MMO 3A: <span style="color: #00ffff;">AI - Automation - Affiliate</span>
             </p>
             <div style="font-size: 2rem; margin: 1rem 0;">📈💰🚀</div>
-            <a href="https://idai.vn/chong-that-nghiep">
+            <a href="https://mmoidai.io.vn">
                 <button class="popup-cta">XEM NGAY</button>
             </a>
             <div class="slots-counter" id="slotsCounter">Chỉ còn 12 slots!</div>
