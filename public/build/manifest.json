@@ -1,14 +1,6 @@
 {
-  "public/image/banner3.png": {
-    "file": "assets/banner3-B9ghVwuH.png",
-    "src": "public/image/banner3.png"
-  },
-  "public/image/banner6.png": {
-    "file": "assets/banner6-D4LxRuu8.png",
-    "src": "public/image/banner6.png"
-  },
   "resources/css/app.css": {
-    "file": "assets/app-B126ZOQO.css",
+    "file": "assets/app-CHU8TLcb.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
