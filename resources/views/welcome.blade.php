@@ -418,7 +418,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">IDAI</h3>
+                    <h3 class="text-2xl font-bold mb-4">AI7.VN</h3>
                     <p class="text-gray-400">Biến Code Thành Tiền - Khóa học dành cho Developer thông minh</p>
                 </div>
 
@@ -426,7 +426,7 @@
                     <h4 class="text-lg font-bold mb-4">Liên hệ</h4>
                     <div class="space-y-2 text-gray-400">
                         <p>📧 ai@idai.vn</p>
-                        <p>📞 0375.145.998</p>
+                        <p>📞 0973.454.140</p>
                         <p>📍 Trụ sở chính: Số nhà 10, dãy H, Khu tập thể Công an Đa Sỹ, Phường Kiến Hưng, Quận Hà Đông
                             Thành phố Hà Nội, Việt Nam</p>
                         <p>📍 Văn phòng giao dịch: Nhà 2B, 110 Đường Nguyễn Hoàng Tôn, Xuân La, Tây Hồ, Hà Nội</p>
