@@ -418,7 +418,7 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8 mb-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">AI7.VN</h3>
+                    <h3 class="text-2xl font-bold mb-4">AI7</h3>
                     <p class="text-gray-400">Biến Code Thành Tiền - Khóa học dành cho Developer thông minh</p>
                 </div>
 
