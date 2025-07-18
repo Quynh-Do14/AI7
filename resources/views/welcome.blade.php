@@ -52,7 +52,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body>
+<body class="relative">
     <!-- Sound Toggle -->
     <!-- <div class="sound-toggle muted" id="soundToggle">🔇</div> -->
 
@@ -267,7 +267,7 @@
     </section>
 
     <!-- Tech Stack Section -->
-    <section class="scroll-reveal revealed" style="padding: 100px 20px; text-align: center;">
+    <section class="scroll-reveal revealed" style="padding: 40px 20px; text-align: center;">
         <h2 class="section-title">Ngành Nghề Hot</h2>
         <div class="tech-grid">
             <div class="tech-item" data-jobs="432">
@@ -334,7 +334,7 @@
     </section>
 
     <!-- Interactive Mini Tool -->
-    <section class="scroll-reveal" style="padding: 100px 20px; text-align: center;">
+    <section class="scroll-reveal" style="padding: 40px 20px; text-align: center;">
         <h2 class="section-title">AI Job Recommender</h2>
         <div class="mini-tool">
             <p style="margin-bottom: 1rem; font-size: 1.2rem;">Chọn kỹ năng của bạn:</p>
@@ -364,7 +364,7 @@
     </section>
 
     <!-- Final Stats -->
-    <section class="scroll-reveal" style="padding: 100px 20px; text-align: center;">
+    <section class="scroll-reveal" style="padding: 40px 20px; text-align: center;">
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number" data-target="2457">0</div>
@@ -414,7 +414,55 @@
             RETURN TO NORMAL MODE
         </button> -->
     </div>
+    <footer class="py-12 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">IDAI</h3>
+                    <p class="text-gray-400">Biến Code Thành Tiền - Khóa học dành cho Developer thông minh</p>
+                </div>
 
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Liên hệ</h4>
+                    <div class="space-y-2 text-gray-400">
+                        <p>📧 ai@idai.vn</p>
+                        <p>📞 0375.145.998</p>
+                        <p>📍 Trụ sở chính: Số nhà 10, dãy H, Khu tập thể Công an Đa Sỹ, Phường Kiến Hưng, Quận Hà Đông
+                            Thành phố Hà Nội, Việt Nam</p>
+                        <p>📍 Văn phòng giao dịch: Nhà 2B, 110 Đường Nguyễn Hoàng Tôn, Xuân La, Tây Hồ, Hà Nội</p>
+                    </div>
+                </div>
+
+                <!-- <div>
+                    <h4 class="text-lg font-bold mb-4">Theo dõi</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/idai.vn/"
+                            class="text-2xl hover:text-blue-400 transition-colors"><i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@idai.vn?_t=8qyMFYoJZQm&_r=1"
+                            class="text-2xl hover:text-pink-400 transition-colors"><i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCW3HksNISmDo6w1Ft3fxAIw?sub_confirmation=1"
+                            class="text-2xl hover:text-red-400 transition-colors"><i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://t.me/sp_idai" class="text-2xl hover:text-green-400 transition-colors"><i
+                                class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div> -->
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Pháp lý</h4>
+                    <div class="space-y-2">
+                        <a href="https://idai.vn/policy/privacy"
+                            class="text-gray-400 hover:text-white transition-colors">Chính Sách Về Quyền Riêng Tư</a>
+                        <br />
+                        <a href="https://idai.vn/policy/useService"
+                            class="text-gray-400 hover:text-white transition-colors">Thỏa Thuận Sử Dụng Dịch Vụ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         // Sound Management
         let soundEnabled = true;
@@ -710,31 +758,31 @@
         }
 
         // Floating Code Animation
-        function createFloatingCode() {
-            const codes = [
-                'const success = true;',
-                'while(unemployed) { findJob(); }',
-                'AI.match(developer, job);',
-                'if(skills > 0) { hired = true; }',
-                'function getJob() { return dream; }',
-                'let salary = Infinity;',
-                'async function findWork() { return await AI.search(); }',
-                'const jobOffer = await Promise.resolve(success);'
-            ];
+        // function createFloatingCode() {
+        //     const codes = [
+        //         'const success = true;',
+        //         'while(unemployed) { findJob(); }',
+        //         'AI.match(developer, job);',
+        //         'if(skills > 0) { hired = true; }',
+        //         'function getJob() { return dream; }',
+        //         'let salary = Infinity;',
+        //         'async function findWork() { return await AI.search(); }',
+        //         'const jobOffer = await Promise.resolve(success);'
+        //     ];
 
-            setInterval(() => {
-                const code = document.createElement('div');
-                code.className = 'floating-code';
-                code.textContent = codes[Math.floor(Math.random() * codes.length)];
-                code.style.left = Math.random() * 80 + 10 + '%';
-                code.style.animationDuration = (Math.random() * 4 + 6) + 's';
-                document.body.appendChild(code);
+        //     setInterval(() => {
+        //         const code = document.createElement('div');
+        //         code.className = 'floating-code';
+        //         code.textContent = codes[Math.floor(Math.random() * codes.length)];
+        //         code.style.left = Math.random() * 80 + 10 + '%';
+        //         code.style.animationDuration = (Math.random() * 4 + 6) + 's';
+        //         document.body.appendChild(code);
 
-                setTimeout(() => {
-                    code.remove();
-                }, 8000);
-            }, 2000);
-        }
+        //         setTimeout(() => {
+        //             code.remove();
+        //         }, 8000);
+        //     }, 2000);
+        // }
 
         // Konami Code Easter Egg
         let konamiCode = [];
@@ -809,7 +857,7 @@
             setTimeout(startCountdown, 5000);
 
             // Start floating code
-            createFloatingCode();
+            // createFloatingCode();
 
             // Play welcome sound
             setTimeout(() => playSound(800, 0.3), 1000);
@@ -829,7 +877,7 @@
         });
     </script>
     <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'960033eb20cc25e5',t:'MTc1MjY1NTMxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
-    <iframe height="1" width="1"
+    <!-- <iframe height="1" width="1"
         style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 
     <div class="floating-code" style="left: 13.2659%; animation-duration: 8.69804s;">const jobOffer = await
@@ -839,7 +887,7 @@
     <div class="floating-code" style="left: 53.8006%; animation-duration: 7.38512s;">while(unemployed) { findJob(); }
     </div>
     <div class="floating-code" style="left: 40.0886%; animation-duration: 7.53088s;">while(unemployed) { findJob(); }
-    </div>
+    </div> -->
 </body>
 
 </html>
