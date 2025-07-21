@@ -267,7 +267,7 @@
     </section>
 
     <!-- Tech Stack Section -->
-    <section class="scroll-reveal revealed" style="padding: 40px 20px; text-align: center;">
+    <section class="scroll-reveal revealed" style="padding: 20px 20px; text-align: center;">
         <h2 class="section-title">Ngành Nghề Hot</h2>
         <div class="tech-grid">
             <div class="tech-item" data-jobs="432">
@@ -334,7 +334,7 @@
     </section>
 
     <!-- Interactive Mini Tool -->
-    <section class="scroll-reveal" style="padding: 40px 20px; text-align: center;">
+    <section class="scroll-reveal" style="padding: 20px 20px; text-align: center;">
         <h2 class="section-title">AI Job Recommender</h2>
         <div class="mini-tool">
             <p style="margin-bottom: 1rem; font-size: 1.2rem;">Chọn kỹ năng của bạn:</p>
@@ -364,7 +364,7 @@
     </section>
 
     <!-- Final Stats -->
-    <section class="scroll-reveal" style="padding: 40px 20px; text-align: center;">
+    <section class="scroll-reveal" style="padding: 20px 20px; text-align: center;">
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-number" data-target="2457">0</div>
@@ -385,7 +385,7 @@
     <div class="popup-overlay" id="mmoPopup">
         <div class="popup">
             <button class="popup-close" onclick="closePopup()">×</button>
-            <h3 class="" id="popupTitle">BẠN BIẾT LẬP TRÌNH, NHƯNG VẪN THẤT NGHIỆP?</h3>
+            <h3 class="" id="popupTitle">BẠN BIẾT LẬP TRÌNH, NHƯNG VẪN THẤT NGHIỆP/THU NHẬP THẤP?</h3>
             <p style="margin: 1rem 0; font-size: 1.1rem;">
                 Khóa học MMO 3A: <span style="color: #00ffff;">AI - Automation - Affiliate</span>
             </p>
@@ -416,53 +416,48 @@
     </div>
     <footer class="py-12 bg-gray-900">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="grid md:grid-cols-2 gap-8 mb-8 items-start">
+
+                <!-- Cột trái: ảnh -->
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">AI7</h3>
-                    <p class="text-gray-400">Biến Code Thành Tiền - Khóa học dành cho Developer thông minh</p>
+                    <img src="image/footer.png" alt="" />
                 </div>
 
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Liên hệ</h4>
-                    <div class="space-y-2 text-gray-400">
-                        <p>📧 ai@idai.vn</p>
-                        <p>📞 0973.454.140</p>
-                        <p>📍 Trụ sở chính: Số nhà 10, dãy H, Khu tập thể Công an Đa Sỹ, Phường Kiến Hưng, Quận Hà Đông
-                            Thành phố Hà Nội, Việt Nam</p>
-                        <p>📍 Văn phòng giao dịch: Nhà 2B, 110 Đường Nguyễn Hoàng Tôn, Xuân La, Tây Hồ, Hà Nội</p>
+                <!-- Cột phải: Liên hệ + Pháp lý -->
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Liên hệ -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Liên hệ</h4>
+                        <div class="space-y-2 text-gray-400">
+                            <p>📧 ai@idai.vn</p>
+                            <p>📞 0926.397.972</p>
+                            <p>📍 Trụ sở chính: Số nhà 10, dãy H, Khu tập thể Công an Đa Sỹ, Phường Kiến Hưng, Quận Hà
+                                Đông
+                                Thành phố Hà Nội, Việt Nam</p>
+                            <p>📍 Văn phòng giao dịch: Nhà 2B, 110 Đường Nguyễn Hoàng Tôn, Xuân La, Tây Hồ, Hà Nội</p>
+                        </div>
+                    </div>
+
+                    <!-- Pháp lý -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Pháp lý</h4>
+                        <div class="space-y-2">
+                            <a href="https://idai.vn/policy/privacy"
+                                class="text-gray-400 hover:text-white transition-colors">
+                                Chính Sách Về Quyền Riêng Tư
+                            </a><br />
+                            <a href="https://idai.vn/policy/useService"
+                                class="text-gray-400 hover:text-white transition-colors">
+                                Thỏa Thuận Sử Dụng Dịch Vụ
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- <div>
-                    <h4 class="text-lg font-bold mb-4">Theo dõi</h4>
-                    <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/idai.vn/"
-                            class="text-2xl hover:text-blue-400 transition-colors"><i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://www.tiktok.com/@idai.vn?_t=8qyMFYoJZQm&_r=1"
-                            class="text-2xl hover:text-pink-400 transition-colors"><i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCW3HksNISmDo6w1Ft3fxAIw?sub_confirmation=1"
-                            class="text-2xl hover:text-red-400 transition-colors"><i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="https://t.me/sp_idai" class="text-2xl hover:text-green-400 transition-colors"><i
-                                class="fa-brands fa-telegram"></i></a>
-                    </div>
-                </div> -->
-
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Pháp lý</h4>
-                    <div class="space-y-2">
-                        <a href="https://idai.vn/policy/privacy"
-                            class="text-gray-400 hover:text-white transition-colors">Chính Sách Về Quyền Riêng Tư</a>
-                        <br />
-                        <a href="https://idai.vn/policy/useService"
-                            class="text-gray-400 hover:text-white transition-colors">Thỏa Thuận Sử Dụng Dịch Vụ</a>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
+
     <script>
         // Sound Management
         let soundEnabled = true;
